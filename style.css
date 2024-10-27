@@ -304,3 +304,48 @@ section {
     margin: auto;
 }
 
+/*Skills Section*/
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px; /* Space between skills */
+}
+
+.skills-list span {
+    background-color: #728b73; /* Skill box color */
+    color: white; /* Text color */
+    padding: 10px 15px; /* Inner padding */
+    border-radius: 20px; /* Rounded corners */
+    font-size: 14px; /* Font size */
+    position: relative; /* Positioning context for child elements */
+    display: flex; /* Use flex to align items */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+    overflow: hidden; /* Ensure contents do not overflow */
+}
+
+/* Allow the span to grow/shrink based on content */
+.skills-list span:hover {
+    background-color: #8bb78d; /* Change background on hover */
+}
+
+.skill-image {
+    margin-right: 8px; /* Space between image and text */
+    width: 16px; /* Set the desired width */
+    height: 16px; /* Set the desired height */
+    opacity: 0; /* Initially hide the image */
+    transition: opacity 0.3s, transform 0.3s; /* Smooth transition for appearing and movement */
+    position: absolute; /* Position the image absolutely */
+    left: 10px; /* Position image on the left */
+}
+
+.skills-list span:hover .skill-image {
+    opacity: 1; /* Show the image on hover */
+    transform: translateX(0); /* Reset transform on hover */
+}
+
+.skills-list span:hover {
+    padding-left: 30px; /* Add extra space on the left when hovered to fit the image */
+}
