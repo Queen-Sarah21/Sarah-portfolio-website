@@ -44,7 +44,7 @@ nav {
 a {
     color: black;
     text-decoration: none;
-    /* text-decoration-color: white; */
+    text-decoration-color: white;
 }
 
 a:hover {
@@ -154,27 +154,17 @@ section {
 /*Profile Section*/
 #profile {
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center-align items horizontally */
-    justify-content: center; /* Center-align elements vertically */
+    justify-content: center;
     height: 80vh;
-    gap: 2rem; /* Adjust spacing between elements */
+    gap: 5rem; 
     text-align: center;
 }
 
 .section__pic-container {
-    width: 300px;
-    height: 300px;
-    overflow: hidden;
-    border-radius: 100%; /* Circular image */
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.section__pic-container img {
-    width: 100%;
-    height: auto;
+    width: 400px;
+    height: 400px;
+    margin: auto 0;
 }
 
 .section__text {
@@ -268,10 +258,6 @@ section {
     position: relative;
 }
 
-.about-containers,
-.details-container {
-    background: rgb(250, 250, 250); /* Light background for the light theme */
-}
 .about-containers {
     gap: 2rem;
     margin-bottom: 2rem;
@@ -282,7 +268,6 @@ section {
 .about-details-container {
     justify-content: center;
     flex-direction: column;
-    color: black;
 }
 
 .about-containers,
@@ -318,7 +303,7 @@ section {
 .section__pic-container {
     height: 400px;
     width: 400px;
-    margin: auto;
+    margin: auto 0;
 }
 
 /*Skills Section*/
@@ -445,66 +430,4 @@ footer {
 footer p {
     text-align: center;
     color: black;
-}
-
-
-/*DARK LIGHT*/
-body.dark-theme {
-    background-color: #5e93e9; /* Dark background */
-    color: white; /* Light text color */
-}
-
-/* Dark Theme Adjustments */
-body.dark-theme .about-containers,
-body.dark-theme .details-container {
-    background: #5e93e9; /* Dark background for dark theme */
-}
-
-body.dark-theme .color-container {
-    background: #5e93e9; /* Dark background for dark theme */
-}
-
-body.dark-theme p, 
-body.dark-theme .nav-links a,
-body.dark-theme .contact-info-container p,
-body.dark-theme .about-containers p,
-body.dark-theme .btn {
-    color: white; /* Light color for paragraph and links */
-}
-
-
-
-body.dark-theme .btn-color-1,
-body.dark-theme .btn-color-2 {
-    border: white 0.1rem solid; /* Light border */
-}
-
-body.dark-theme a:hover {
-    color: grey; /* Change hover color for links */
-    text-decoration: underline;
-    text-underline-offset: 1rem;
-    text-decoration-color: grey;
-}
-
-/* Light Theme Default */
-nav-links a,
-.contact-info-container p {
-    color: black; /* Default dark text color */
-}
-
-.btn-color-1,
-.btn-color-2 {
-    border: rgb(53, 53, 53) 0.1rem solid; /* Dark border */
-}
-/* Adjust theme icon size */
-.theme-icon {
-    width: 30px; /* Set the width for the icon */
-    height: 30px; /* Set the height for the icon */
-    cursor: pointer; /* Pointer cursor */
-    margin-left: 1rem; /* Space between contact and icon */
-}
-
-/* Brightness icon */
-.brightness-icon {
-    content: url('/assets/brightness.png'); /* Change the source to your brightness icon */
 }
