@@ -6,18 +6,25 @@ function toggleMenu() {
     icon.classList.toggle("open");
 }
 
-function openModal() {
-    document.getElementById("descriptionModal").style.display = "block";
-}
+// Function to open and close modals
+document.addEventListener('DOMContentLoaded', function () {
+    // Open modal on button click
+    document.querySelectorAll('[data-modal]').forEach(button => {
+        button.addEventListener('click', function () {
+            const modalSelector = button.getAttribute('data-modal');
+            const modal = document.querySelector(`.modal[data-modal="${modalSelector}"]`);
+            if (modal) {
+                modal.style.display = 'block';
+            }
+        });
+    });
 
-function closeModal() {
-    document.getElementById("descriptionModal").style.display = "none";
-}
-
-// Optional: Close the modal when clicking outside of it
-window.onclick = function(event) {
-    const modal = document.getElementById("descriptionModal");
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-};
+    // Close modal when clicking on close button or outside modal content
+    document.querySelectorAll('.modal').forEach(modal => {
+        modal.addEventListener('click', function (event) {
+            if (event.target.classList.contains('close') || event.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+    });
+});
