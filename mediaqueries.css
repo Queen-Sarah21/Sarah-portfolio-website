@@ -14,7 +14,7 @@
     }
 
     .pro-containers {
-        grid-template-columns: repeat(4, 1fr); /* 3 columns for medium screens */
+        grid-template-columns: repeat(3, 1fr); /* 3 columns for medium screens */
     }
 
     
