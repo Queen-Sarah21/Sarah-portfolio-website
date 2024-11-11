@@ -2,12 +2,12 @@
 
 This is my portfolio website, designed to showcase my skills, projects, and experience as a developer. The portfolio is built with HTML, CSS, and JavaScript, and includes responsive design features to ensure an optimized experience across devices.
 
-##Table of Contents: 
+## Table of Contents: 
 - Features
 - Technologies Used
 - Usage
 
-###Features
+### Features
 **Responsive Design**: The layout adapts seamlessly to different screen sizes (desktop, tablet, and mobile).
 
 **Dynamic Navigation**: The site features a responsive navigation menu, with a hamburger icon for smaller screens.
@@ -21,13 +21,13 @@ This is my portfolio website, designed to showcase my skills, projects, and expe
 **Contact Section**: Contains contact information with additional styling for accessibility.
 
 
-###Technologies Used
+### Technologies Used
 - HTML5 for structuring content.
 - CSS3 for styling and responsive layouts.
 - JavaScript for interactive features, like toggling the menu and modals.
 
 
-###Usage
+### Usage
 **Toggle Menu**: On smaller screens, click the hamburger icon to open and close the navigation menu.
 
 **View Modals**: Click on designated buttons to open modals for additional content or images.
