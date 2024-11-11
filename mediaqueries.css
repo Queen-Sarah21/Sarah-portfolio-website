@@ -12,7 +12,14 @@
         width: 300px; /* Adjust width */
         height: 300px; /* Adjust height */
     }
+
+    .pro-containers {
+        grid-template-columns: repeat(4, 1fr); /* 3 columns for medium screens */
+    }
+
+    
 }
+
 
 @media screen and (max-width: 1200px) {
     #desktop-nav {
@@ -61,6 +68,59 @@
     .about-containers {
         margin-top: 0;
     }
+
+    .pro-containers {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns for medium screens */
+        
+    }
+
+   
+    #profile {
+        padding: 1rem; /* Reduce padding for smaller screens */
+        margin-bottom: 1rem; /* Reduce space between sections */
+    }
+
+    #about {
+        padding: 1rem;
+        margin-top: -20rem;
+
+    }
+
+    #projects {
+        padding: 1rem;
+        margin-top: 5rem;
+    }
+
+    .section__pic-container {
+        width: auto;
+        height: 46vw;
+        justify-content: center;
+    }
+
+
+}
+
+@media screen and (max-width: 900px) {
+    .pro-containers {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+    }
+
+    #profile {
+        padding: 1rem; /* Reduce padding for smaller screens */
+        margin-bottom: 1rem; /* Reduce space between sections */
+    }
+
+    #about {
+        padding: 1rem;
+        margin-top: -20rem;
+
+    }
+
+    .section__pic-container {
+        width: auto;
+        height: 46vw;
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -69,9 +129,17 @@
         height: 40vh;
         padding: 1.5rem;
     }
+
+    /*ADDES PROFILE AND ABOUT*/
     #profile {
-        height: 83vh;
-        margin-bottom: 0;
+        padding: 1rem; /* Reduce padding for smaller screens */
+        margin-bottom: 1rem; /* Reduce space between sections */
+    }
+
+    #about {
+        padding: 1rem;
+        margin-top: -15rem;
+
     }
     article {
         font-size: 1rem;
@@ -124,5 +192,10 @@
     }
     .text-container {
         text-align: justify;
+    }
+    
+    .pro-containers {
+        grid-template-columns: 1fr; /* 1 column for extra small screens */
+        gap: 0.5rem; /* Smaller gap for mobile */
     }
 }

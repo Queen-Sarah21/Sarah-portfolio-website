@@ -270,10 +270,14 @@ section {
 }
 
 /*About section*/
-
+/* Default padding/margin */
+#about, #profile {
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
 #about {
     position: relative;
-    padding: 3rem 0;
+    padding: 2rem 0;
 }
 
 .about-containers {
@@ -376,15 +380,17 @@ section {
 /*PROJECT SECTION*/
 #projects {
     position: relative;
+    padding: 1rem;
+    justify-content: center;
 }
 
 .pro-containers {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem; /* Adjusts space between the containers */
+    position: relative;
+    justify-content: center;
 }
-
-
 
 .color-container {
     border-color: rgb(163, 163, 163);
