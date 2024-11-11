@@ -9,10 +9,15 @@ Usage
 
 Features
 Responsive Design: The layout adapts seamlessly to different screen sizes (desktop, tablet, and mobile).
+
 Dynamic Navigation: The site features a responsive navigation menu, with a hamburger icon for smaller screens.
+
 Modals: Interactive modals for displaying additional information.
+
 Profile Section: Includes profile and about information with images that adjust based on screen size.
+
 Skills & Projects: A dedicated section to showcase my skills and past projects with flexible layouts.
+
 Contact Section: Contains contact information with additional styling for accessibility.
 
 
